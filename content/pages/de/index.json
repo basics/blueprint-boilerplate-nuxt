@@ -1,0 +1,19 @@
+{
+  "i18nParams": {
+    "en": {
+      "slug": ""
+    },
+    "de": {
+      "slug": ""
+    }
+  },
+  "title": "Index",
+  "components": [
+    {
+      "component": "Example",
+      "data": {
+        "headline": "Example Component"
+      }
+    }
+  ]
+}

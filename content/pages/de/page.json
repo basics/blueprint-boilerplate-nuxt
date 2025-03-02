@@ -1,0 +1,19 @@
+{
+  "i18nParams": {
+    "en": {
+      "slug": "page"
+    },
+    "de": {
+      "slug": "seite"
+    }
+  },
+  "title": "Seite",
+  "components": [
+    {
+      "component": "Example",
+      "data": {
+        "headline": "Example Component"
+      }
+    }
+  ]
+}

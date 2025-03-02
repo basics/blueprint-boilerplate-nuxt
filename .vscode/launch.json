@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "command": "npm run dev",
+      "name": "Debug Nuxt (Dev)",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "command": "npm run generate",
+      "name": "Debug Nuxt (Generate)",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "command": "npm run build",
+      "name": "Debug Nuxt (Build)",
+      "request": "launch",
+      "type": "node-terminal"
+    }
+  ]
+}

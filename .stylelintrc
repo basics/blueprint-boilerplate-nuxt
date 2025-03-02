@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order"
+  ],
+  "customSyntax": "postcss-html",
+  "ignoreFiles": [
+    "./**/*.js"
+  ],
+  "rules": {
+    "declaration-property-value-no-unknown": [
+      true,
+      {
+        "ignoreProperties": {
+          "/.+/": "/(vw|em)+/"
+        }
+      }
+    ],
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": [
+          "em",
+          "vw"
+        ]
+      }
+    ]
+  }
+}
