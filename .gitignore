@@ -35,3 +35,4 @@ env/cert/*
 dist
 .output
 .data
+.stylelintcache

@@ -1,5 +1,5 @@
 <template>
-  <div :class="page.class">
+  <div :class="pageData.class">
     <component
       :is="item.component"
       v-for="(item, index) in components"
@@ -16,10 +16,12 @@ import {
   useRuntimeConfig,
   usePageContent,
   useSeoMeta,
-  useHead
+  useHead,
+  provide
 } from '#imports';
 const { fetch } = usePageContent();
-const { components, title, description, image, ...page } = await fetch();
+const pageData = await fetch();
+const { components, title, description, image } = pageData;
 
 const {
   app: { baseURL },
@@ -27,6 +29,8 @@ const {
     general: { url }
   }
 } = useRuntimeConfig();
+
+provide('pageData', pageData);
 
 useHead({});
 useSeoMeta({

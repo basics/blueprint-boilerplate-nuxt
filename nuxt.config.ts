@@ -30,6 +30,13 @@ export default defineNuxtConfig({
     url: getWebsiteHost()
   },
 
+  build: {
+    transpile: [
+      'sort-css-media-queries',
+      'sort-css-media-queries/lib/create-sort.js'
+    ]
+  },
+
   app: {
     baseURL: getBaseUrl(),
     head: {

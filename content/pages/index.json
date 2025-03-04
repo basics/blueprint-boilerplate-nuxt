@@ -12,7 +12,19 @@
     {
       "component": "Example",
       "data": {
-        "headline": "Example Component"
+        "headline": "Example Component",
+        "picture": {
+          "title": "Cuby",
+          "alt": "Cuby",
+          "sources": [
+            {
+              "src": "/images/cuby.jpg",
+              "sizes": {
+                "default": "1024px"
+              }
+            }
+          ]
+        }
       }
     }
   ]
