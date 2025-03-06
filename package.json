@@ -48,7 +48,7 @@
     "husky": "9.1.7",
     "lint-staged": "15.4.3",
     "postcss-html": "1.8.0",
-    "prettier": "3.5.2",
+    "prettier": "3.5.3",
     "stylelint": "16.15.0",
     "stylelint-config-css-modules": "4.4.0",
     "stylelint-config-recess-order": "6.0.0",
@@ -58,7 +58,7 @@
   "dependencies": {
     "@csstools/postcss-global-data": "3.0.0",
     "@fullhuman/postcss-purgecss": "7.0.2",
-    "@nuxt/content": "3.2.2",
+    "@nuxt/content": "3.3.0",
     "@nuxtjs/i18n": "9.2.1",
     "@nuxtjs/seo": "2.2.0",
     "@pinia/nuxt": "0.10.1",
