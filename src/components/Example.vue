@@ -1,9 +1,7 @@
 <template>
   <content-container class="example">
     <div>
-      <element-headline v-font="$getFont('Open Sans', 300, 'normal')">
-        {{ headline }}
-      </element-headline>
+      <element-headline :content="headline" />
       <element-rich-text>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </element-rich-text>
@@ -27,14 +25,13 @@
 </template>
 
 <script setup lang="ts">
-import { inject, useBoosterCritical, useBoosterFonts } from '#imports';
+import { inject, useBoosterCritical } from '#imports';
 import { ContentContainer } from 'vue-semantic-structure';
 import ElementHeadline from '@/components/element/Headline.vue';
 import ElementRichText from '@/components/element/RichText.vue';
 
 import BoosterPicture from '#booster/components/BoosterPicture.vue';
 
-const { $getFont } = useBoosterFonts();
 const { isCritical } = useBoosterCritical();
 
 const layoutData = inject('layoutData');

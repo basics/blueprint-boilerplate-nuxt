@@ -1,6 +1,9 @@
 <template>
-  <content-headline v-slot="context" v-font="$getFont('Open Sans')">
-    <slot v-bind="context" />
+  <content-headline
+    v-slot="context"
+    v-font="$getFont('Open Sans', 300, 'normal')"
+  >
+    <slot v-bind="context">{{ content }}</slot>
   </content-headline>
 </template>
 
