@@ -1,0 +1,31 @@
+{
+  "i18nParams": {
+    "en": {
+      "slug": ""
+    },
+    "de": {
+      "slug": ""
+    }
+  },
+  "title": "Index",
+  "components": [
+    {
+      "component": "Example",
+      "data": {
+        "headline": "Example Component",
+        "picture": {
+          "title": "Cuby",
+          "alt": "Cuby",
+          "sources": [
+            {
+              "src": "/images/cuby.jpg",
+              "sizes": {
+                "default": "1024px"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
