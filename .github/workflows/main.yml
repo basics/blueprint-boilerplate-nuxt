@@ -39,7 +39,7 @@ jobs:
         run: npm ci
 
       - name: Lint
-        run: npm run Lint
+        run: npm run lint
 
   semantic-version:
     name: Semantic Release
