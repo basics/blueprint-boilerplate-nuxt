@@ -1,0 +1,1 @@
+{"id":"9be2ea42-ef0b-482f-bef8-e06f2cb7c562","timestamp":1741357710065,"matcher":{"static":{"/sitemap.xml":{"redirect":"/sitemap_index.xml"},"/api/content/page/database.sql":{"prerender":true},"/api/content/layout/database.sql":{"prerender":true}},"wildcard":{},"dynamic":{}},"prerendered":["/de","/"]}
