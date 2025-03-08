@@ -1,0 +1,1 @@
+import{_ as r,x as t,j as o,m as s}from"./BRKex3Wr.js";import"./CoBOYjO1.js";const a={};function n(e,c){return o(),t("table",null,[s(e.$slots,"default")])}const f=r(a,[["render",n]]);export{f as default};
