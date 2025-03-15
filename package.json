@@ -63,7 +63,7 @@
     "@nuxtjs/seo": "2.2.0",
     "@pinia/nuxt": "0.10.1",
     "nuxt": "3.16.0",
-    "nuxt-booster": "3.2.4",
+    "nuxt-booster": "3.2.6",
     "pathe": "2.0.3",
     "pinia": "3.0.1",
     "postcss-custom-media": "11.0.5",
