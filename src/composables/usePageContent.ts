@@ -1,6 +1,5 @@
 import { useRoute, queryCollection, useSetI18nParams } from '#imports';
 import type { MarkdownRoot } from '@nuxt/content';
-import type { MetaFlat } from 'zhead';
 
 interface PageContentComponent {
   component: string;
@@ -14,10 +13,10 @@ interface PageContent extends MarkdownRoot {
   description?: string;
   components: PageContentComponent[];
   image?: {
-    src: MetaFlat['ogImageUrl'];
-    width: MetaFlat['ogImageWidth'];
-    height: MetaFlat['ogImageHeight'];
-    type: MetaFlat['ogImageType'];
+    src: string;
+    width: number;
+    height: number;
+    type: 'image/png' | 'image/jpeg' | 'image/gif' | undefined;
   };
 }
 

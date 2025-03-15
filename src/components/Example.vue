@@ -88,8 +88,8 @@ defineProps<{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 200vh;
-  height: 200svh;
+  height: 100vh;
+  height: 100svh;
 
   & pre {
     font-family: monospace;
