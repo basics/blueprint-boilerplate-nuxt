@@ -25,17 +25,55 @@
 </template>
 
 <script setup lang="ts">
-import { inject, useBoosterCritical } from '#imports';
+import { useBoosterCritical } from '#imports';
+import { inject, onMounted, onUnmounted } from 'vue';
 import { ContentContainer } from 'vue-semantic-structure';
 import ElementHeadline from '@/components/element/Headline.vue';
 import ElementRichText from '@/components/element/RichText.vue';
 
 import BoosterPicture from '#booster/components/BoosterPicture.vue';
+import useViewportObserver from '~/composables/useViewportObserver';
+import useDirectionObserver from '~/composables/useDirectionObserver';
+import { Subscription } from 'rxjs';
+import useResizeObserver from '~/composables/useResizeObserver';
+import useScrollObserver from '~/composables/useScrollObserver';
 
 const { isCritical } = useBoosterCritical();
 
 const layoutData = inject('layoutData');
 const pageData = inject('pageData');
+const createViewportObserver = useViewportObserver();
+const createDirectionObserver = useDirectionObserver();
+const createScrollObserver = useScrollObserver();
+const createResizeObserver = useResizeObserver();
+
+let subscriptions: Subscription | undefined;
+onMounted(() => {
+  subscriptions = new Subscription();
+  const directionObserver = createDirectionObserver();
+  const viewportObserver = createViewportObserver();
+  const scrollObserver = createScrollObserver();
+  const resizeObserver = createResizeObserver();
+
+  [
+    directionObserver.subscribe(entry => {
+      console.log('directionObserver', JSON.stringify(entry, null, 2));
+    }),
+    viewportObserver.subscribe(entry => {
+      console.log('viewportObserver', JSON.stringify(entry, null, 2));
+    }),
+    scrollObserver.subscribe(entry => {
+      console.log('scrollObserver', JSON.stringify(entry, null, 2));
+    }),
+    resizeObserver.subscribe(entry => {
+      console.log('resizeObserver', JSON.stringify(entry, null, 2));
+    })
+  ].forEach(subscription => subscriptions?.add(subscription));
+});
+
+onUnmounted(() => {
+  subscriptions?.unsubscribe();
+});
 
 defineProps<{
   headline: string;
@@ -50,8 +88,8 @@ defineProps<{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  height: 100svh;
+  height: 200vh;
+  height: 200svh;
 
   & pre {
     font-family: monospace;
