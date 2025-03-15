@@ -3,6 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config';
 import svgLoader from 'vite-svg-loader';
 import * as postcssFunctions from './src/globals/postcss/functions';
 import { DEFAULT_LOCALE } from './i18n.config';
+import checker from 'vite-plugin-checker';
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -86,6 +87,9 @@ export default defineNuxtConfig({
             }
           ]
         }
+      }),
+      checker({
+        vueTsc: true
       })
     ]
   },
