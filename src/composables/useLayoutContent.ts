@@ -17,7 +17,7 @@ export function useLayoutContent() {
           queryCollection('layout')
             .path(`/layout/${locale.value}`)
             .first()
-            .then(({ body }) => body),
+            .then(data => data?.body || {}),
         { watch: [locale] }
       );
 

@@ -30,7 +30,7 @@ export function usePageContent() {
       const { components, i18nParams, ...meta } = await queryCollection('page')
         .path(path)
         .first()
-        .then(({ body }) => body as PageContent);
+        .then(data => (data?.body || {}) as PageContent);
 
       if (!import.meta.server) {
         setI18nParams(i18nParams);
