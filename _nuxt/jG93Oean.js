@@ -1,1 +1,0 @@
-import{_ as r,x as t,j as o,m as s}from"./C_s2FnjP.js";import"./BuzxRxBj.js";const n={};function c(e,a){return o(),t("td",null,[s(e.$slots,"default")])}const d=r(n,[["render",c]]);export{d as default};
