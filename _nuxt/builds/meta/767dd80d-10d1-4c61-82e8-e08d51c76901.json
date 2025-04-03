@@ -1,0 +1,1 @@
+{"id":"767dd80d-10d1-4c61-82e8-e08d51c76901","timestamp":1743674470503,"matcher":{"static":{"/sitemap.xml":{"redirect":"/sitemap_index.xml"},"/__nuxt_content/page/sql_dump":{"prerender":true},"/__nuxt_content/layout/sql_dump":{"prerender":true}},"wildcard":{},"dynamic":{}},"prerendered":["/de","/"]}
