@@ -25,18 +25,18 @@
 </template>
 
 <script setup lang="ts">
+import { Subscription } from 'rxjs';
 import { useBoosterCritical } from '#imports';
 import { inject, onMounted, onUnmounted } from 'vue';
 import { ContentContainer } from 'vue-semantic-structure';
+
 import ElementHeadline from '@/components/element/Headline.vue';
 import ElementRichText from '@/components/element/RichText.vue';
-
 import BoosterPicture from '#booster/components/BoosterPicture.vue';
-import useViewportObserver from '~/composables/useViewportObserver';
-import useDirectionObserver from '~/composables/useDirectionObserver';
-import { Subscription } from 'rxjs';
-import useResizeObserver from '~/composables/useResizeObserver';
-import useScrollObserver from '~/composables/useScrollObserver';
+import useViewportObserver from '@/composables/useViewportObserver';
+import useDirectionObserver from '@/composables/useDirectionObserver';
+import useResizeObserver from '@/composables/useResizeObserver';
+import useScrollObserver from '@/composables/useScrollObserver';
 
 const { isCritical } = useBoosterCritical();
 
