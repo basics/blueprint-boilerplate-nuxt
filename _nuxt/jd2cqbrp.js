@@ -1,1 +1,0 @@
-import{_ as r,x as o,j as t,m as n}from"./CTQA-Dbq.js";import"./6r_9IqUm.js";const s={};function c(e,a){return t(),o("strong",null,[n(e.$slots,"default")])}const f=r(s,[["render",c]]);export{f as default};
