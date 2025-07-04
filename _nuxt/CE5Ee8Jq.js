@@ -1,0 +1,1 @@
+import{_ as o,x as t,j as r,m as c}from"./DTgINAk1.js";import"./Dbi0ek4R.js";const s={};function n(e,l){return r(),t("blockquote",null,[c(e.$slots,"default")])}const f=o(s,[["render",n]]);export{f as default};
