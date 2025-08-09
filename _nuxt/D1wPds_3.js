@@ -1,1 +1,0 @@
-import{_ as r,x as o,j as t,m as s}from"./DTgINAk1.js";import"./Dbi0ek4R.js";const n={};function c(e,a){return t(),o("p",null,[s(e.$slots,"default")])}const f=r(n,[["render",c]]);export{f as default};
