@@ -134,8 +134,10 @@ export default defineNuxtConfig({
     order: 'cssnanoLast'
   },
 
-  generate: {
-    routes: ['/', '/de']
+  nitro: {
+    prerender: {
+      routes: ['/', '/de']
+    }
   },
 
   i18n: {
