@@ -55,7 +55,7 @@
     "stylelint-config-standard": "38.0.0",
     "typescript-eslint": "8.39.0",
     "vite-plugin-checker": "0.10.2",
-    "vue-tsc": "2.2.12"
+    "vue-tsc": "3.0.5"
   },
   "dependencies": {
     "@csstools/postcss-global-data": "3.0.0",
