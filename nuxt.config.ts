@@ -136,7 +136,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-    routes: ['/', '/de']
+      routes: ['/', '/de']
     }
   },
 
