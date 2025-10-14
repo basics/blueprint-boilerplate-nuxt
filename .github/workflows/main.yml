@@ -20,7 +20,7 @@ jobs:
         node: [22]
 
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
 
@@ -52,7 +52,7 @@ jobs:
         node: [22]
 
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
       - name: Checkout Repo
@@ -76,7 +76,7 @@ jobs:
         node: [22]
 
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
       - name: Checkout Repo
